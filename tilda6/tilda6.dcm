@@ -1,3 +1,8 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 5-WAY-JOYSTICK
+D compatible with K1-5202UA-02 and TM-4175-B-B
+K K1-5202UA-02 TM-4175-B-B
+$ENDCMP
+#
 #End Doc Library
