@@ -278,8 +278,6 @@ Text Label 4150 2300 0    50   ~ 0
 LCD_RST
 Text Label 4150 2100 0    50   ~ 0
 LCD_CS
-Text Label 3650 3000 2    50   ~ 0
-LCD_BL_EN
 Text Label 3650 3200 2    50   ~ 0
 LCD_PWR_EN
 Text Label 4150 2400 0    50   ~ 0
@@ -1316,8 +1314,6 @@ Text Label 7550 4450 2    50   ~ 0
 PI2C_SCL
 Text Label 8100 4550 2    50   ~ 0
 PI2C_SDA
-Text Label 8100 4650 2    50   ~ 0
-LCD_BL_EN
 Text Label 8100 4750 2    50   ~ 0
 LEDDATA
 $Comp
@@ -1632,4 +1628,71 @@ Connection ~ 10400 900
 Wire Wire Line
 	10600 600  10400 600 
 Connection ~ 10400 600 
+$Comp
+L corelib:2SK3019 Q4
+U 1 1 625A5B34
+P 9650 5400
+F 0 "Q4" H 9856 5446 50  0000 L CNN
+F 1 "2SK3019" H 9350 5550 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-416" H 9850 5325 50  0001 L CIN
+F 3 "https://datasheet.lcsc.com/szlcsc/Tak-Cheong-2SK3019_C261283.pdf" H 9650 5400 50  0001 L CNN
+	1    9650 5400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 625B9074
+P 9550 5600
+F 0 "#PWR014" H 9550 5350 50  0001 C CNN
+F 1 "GND" H 9555 5427 50  0000 C CNN
+F 2 "" H 9550 5600 50  0001 C CNN
+F 3 "" H 9550 5600 50  0001 C CNN
+	1    9550 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R15
+U 1 1 625B988D
+P 9950 5550
+F 0 "R15" H 9880 5504 50  0000 R CNN
+F 1 "10k" V 9950 5600 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9880 5550 50  0001 C CNN
+F 3 "~" H 9950 5550 50  0001 C CNN
+	1    9950 5550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9950 5400 9850 5400
+Wire Wire Line
+	9550 5600 9850 5600
+Wire Wire Line
+	9850 5600 9850 5700
+Wire Wire Line
+	9850 5700 9950 5700
+Connection ~ 9550 5600
+Text Label 9550 5200 0    50   ~ 0
+UVLO
+Text Label 8100 4650 2    50   ~ 0
+UVLO_TRIG
+Text Label 9950 5400 0    50   ~ 0
+UVLO_TRIG
+Text Label 3650 3000 2    50   ~ 0
+IO0
+$Comp
+L Device:R R16
+U 1 1 625DED4D
+P 10650 2200
+F 0 "R16" V 10550 2250 50  0000 R CNN
+F 1 "267k" V 10650 2300 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 10580 2200 50  0001 C CNN
+F 3 "~" H 10650 2200 50  0001 C CNN
+	1    10650 2200
+	1    0    0    -1  
+$EndComp
+Text Label 10650 2050 0    50   ~ 0
+3V3
+Text Label 10750 2350 0    50   ~ 0
+IO0
+Wire Wire Line
+	10750 2350 10650 2350
 $EndSCHEMATC
