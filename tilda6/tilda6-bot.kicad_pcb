@@ -2,7 +2,7 @@
 
   (general
     (thickness 1)
-    (drawings 18)
+    (drawings 21)
     (tracks 2063)
     (zones 0)
     (modules 55)
@@ -30,7 +30,7 @@
     (46 B.CrtYd user)
     (47 F.CrtYd user)
     (48 B.Fab user)
-    (49 F.Fab user)
+    (49 F.Fab user hide)
   )
 
   (setup
@@ -2573,7 +2573,7 @@
     (at 126.25 100.75 348)
     (path /60FE0290)
     (attr smd)
-    (fp_text reference SW3 (at 0.1 2.25 168) (layer F.SilkS)
+    (fp_text reference SW3 (at 3.932549 0.825414 168) (layer F.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.15)))
     )
     (fp_text value SW_SPST (at 0.4 -3.2 168) (layer F.Fab)
@@ -2964,6 +2964,15 @@
     )
   )
 
+  (gr_text SHIELD (at 148.65 103.775 -5) (layer F.SilkS) (tstamp 620EBB4C)
+    (effects (font (size 1.2 1.2) (thickness 0.3)))
+  )
+  (gr_text MARTENTIC (at 137.15 103.975 5) (layer F.SilkS) (tstamp 620EBB3F)
+    (effects (font (size 1.2 1.2) (thickness 0.3)))
+  )
+  (gr_text EPILEPTO (at 126.925 103.85 -5) (layer F.SilkS)
+    (effects (font (size 1.2 1.2) (thickness 0.3)))
+  )
   (gr_circle (center 111.15 111.15) (end 111.4 111.15) (layer F.SilkS) (width 0.12))
   (gr_circle (center 131.175 108.55) (end 131.575 108.6) (layer F.SilkS) (width 0.12))
   (gr_circle (center 129.6 109.225) (end 129.825 109.275) (layer F.SilkS) (width 0.12))
