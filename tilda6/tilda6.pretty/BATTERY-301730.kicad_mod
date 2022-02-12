@@ -1,0 +1,12 @@
+(module BATTERY-301730 (layer F.Cu) (tedit 6207C86F)
+  (fp_text reference REF** (at -0.5 2) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value BATTERY-301730 (at 0 -6.5) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_line (start -15 -8.5) (end 15 -8.5) (layer F.Fab) (width 0.12))
+  (fp_line (start 15 -8.5) (end 15 8.5) (layer F.Fab) (width 0.12))
+  (fp_line (start 15 8.5) (end -15 8.5) (layer F.Fab) (width 0.12))
+  (fp_line (start -15 8.5) (end -15 -8.5) (layer F.Fab) (width 0.12))
+)

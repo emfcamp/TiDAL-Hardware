@@ -36,17 +36,6 @@ F 3 "~" H 2600 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x02_Odd_Even J3
-U 1 1 61F5E010
-P 2600 3400
-F 0 "J3" H 2650 3617 50  0000 C CNN
-F 1 "Conn_02x02_Odd_Even" H 2650 3526 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x02_P1.27mm_Vertical_SMD" H 2600 3400 50  0001 C CNN
-F 3 "~" H 2600 3400 50  0001 C CNN
-	1    2600 3400
-	1    0    0    -1  
-$EndComp
-$Comp
 L tilda6:5-WAY-JOYSTICK U1
 U 1 1 61F629D3
 P 4650 1250
@@ -350,14 +339,14 @@ F 3 "~" H 2850 4350 50  0001 C CNN
 $EndComp
 Text Label 2650 4350 0    50   ~ 0
 GND
-Text Label 2400 3500 2    50   ~ 0
+Text Label 2600 3700 2    50   ~ 0
 3V3
-Text Label 2900 3400 0    50   ~ 0
+Text Label 2700 3200 0    50   ~ 0
 GND
 Wire Wire Line
 	2650 4050 2900 4050
 Wire Wire Line
-	2900 4050 2900 3500
+	2900 4050 2900 3700
 $Comp
 L Switch:SW_Push SW2
 U 1 1 61FC42B5
@@ -469,4 +458,22 @@ Text Label 5200 4250 2    50   ~ 0
 3V3
 Text Label 5600 4250 0    50   ~ 0
 DISPLAY_3V3
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J3
+U 1 1 61F5E010
+P 2700 3400
+F 0 "J3" H 2750 3617 50  0000 C CNN
+F 1 "Conn_02x02_Odd_Even" H 2750 3526 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x02_P1.27mm_Vertical_SMD" H 2700 3400 50  0001 C CNN
+F 3 "~" H 2700 3400 50  0001 C CNN
+	1    2700 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2700 3700 2900 3700
+NoConn ~ 2600 3200
+NoConn ~ 2400 2850
+NoConn ~ 2400 2950
+NoConn ~ 2900 2850
+NoConn ~ 2900 2950
 $EndSCHEMATC
