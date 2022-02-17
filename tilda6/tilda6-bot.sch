@@ -1736,4 +1736,31 @@ F 3 "~" H 6550 5450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6550 5750 6550 5600
+$Comp
+L Connector_Generic:Conn_01x08 J5
+U 1 1 620F1210
+P 10700 4350
+F 0 "J5" H 10780 4342 50  0000 L CNN
+F 1 "Conn_01x08" H 10780 4251 50  0000 L CNN
+F 2 "tilda6:tilda-expansion-port" H 10700 4350 50  0001 C CNN
+F 3 "~" H 10700 4350 50  0001 C CNN
+	1    10700 4350
+	1    0    0    -1  
+$EndComp
+Text Label 10500 4750 2    50   ~ 0
+G3
+Text Label 10500 4650 2    50   ~ 0
+G2
+Text Label 10500 4550 2    50   ~ 0
+G1
+Text Label 10500 4450 2    50   ~ 0
+G0
+Text Label 10500 4350 2    50   ~ 0
+PI2C_SDA
+Text Label 10500 4250 2    50   ~ 0
+PI2C_SCL
+Text Label 10500 4150 2    50   ~ 0
+GND
+Text Label 10500 4050 2    50   ~ 0
+3V3
 $EndSCHEMATC
