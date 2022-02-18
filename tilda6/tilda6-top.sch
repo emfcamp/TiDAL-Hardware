@@ -161,7 +161,6 @@ $EndComp
 NoConn ~ 4650 2700
 NoConn ~ 4650 2800
 NoConn ~ 4650 3500
-NoConn ~ 4650 3900
 Text Label 4650 2900 2    50   ~ 0
 LCD_DIN
 Text Label 4650 3000 2    50   ~ 0
@@ -476,4 +475,6 @@ NoConn ~ 2400 2850
 NoConn ~ 2400 2950
 NoConn ~ 2900 2850
 NoConn ~ 2900 2950
+Text Label 4650 3900 2    50   ~ 0
+GND
 $EndSCHEMATC
