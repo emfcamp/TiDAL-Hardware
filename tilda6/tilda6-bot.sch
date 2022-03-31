@@ -1216,17 +1216,6 @@ Wire Wire Line
 Connection ~ 4850 4350
 Wire Wire Line
 	4850 4350 4850 4300
-$Comp
-L tilda6:ESP32-S3FN8 U1
-U 1 1 6208023D
-P 8950 2700
-F 0 "U1" H 8300 4750 50  0000 C CNN
-F 1 "ESP32-S3FN8" H 9600 4750 50  0000 C CNN
-F 2 "tilda6:QFN-56-1EP_7x7mm_P0.4mm_EP4.1x4.1mm" H 9000 4050 50  0001 C CNN
-F 3 "" H 9000 4050 50  0001 C CNN
-	1    8950 2700
-	1    0    0    -1  
-$EndComp
 Text Label 8100 2050 2    50   ~ 0
 LCD_DIN
 Text Label 8100 2150 2    50   ~ 0
@@ -1270,20 +1259,18 @@ JOYU
 Text Label 8100 2600 2    50   ~ 0
 JOYD
 Text Label 8100 3100 2    50   ~ 0
-AUTH_WKUP
-Text Label 9850 2500 0    50   ~ 0
 CHARGE_DET
-Text Label 8100 3450 2    50   ~ 0
+Text Label 9850 2500 0    50   ~ 0
 PSRAMCS
-Text Label 8100 3350 2    50   ~ 0
+Text Label 9850 2600 0    50   ~ 0
 PSRAMHD
-Text Label 8100 3650 2    50   ~ 0
+Text Label 9850 2900 0    50   ~ 0
 PSRAMCLK
-Text Label 8100 3550 2    50   ~ 0
+Text Label 9850 3100 0    50   ~ 0
 PSRAMD
-Text Label 8100 3750 2    50   ~ 0
+Text Label 9850 3000 0    50   ~ 0
 PSRAMQ
-Text Label 8100 3850 2    50   ~ 0
+Text Label 9850 2700 0    50   ~ 0
 PSRAMWP
 Text Label 8100 3950 2    50   ~ 0
 LCD_PWR_EN
@@ -1312,30 +1299,10 @@ F 3 "" H 9000 4900 50  0001 C CNN
 $EndComp
 Text Label 9850 2100 0    50   ~ 0
 EN
-Wire Wire Line
-	8700 600  8800 600 
-Connection ~ 8800 600 
-Wire Wire Line
-	8800 600  8900 600 
-Connection ~ 8900 600 
-Wire Wire Line
-	8900 600  9000 600 
-Connection ~ 9150 600 
-Wire Wire Line
-	9150 600  9250 600 
-Connection ~ 9250 600 
-Wire Wire Line
-	9250 600  10050 600 
 Text Label 10150 2200 0    50   ~ 0
 3V3
 Wire Wire Line
 	9850 2200 9850 2100
-NoConn ~ 9850 2600
-NoConn ~ 9850 2700
-NoConn ~ 9850 2800
-NoConn ~ 9850 2900
-NoConn ~ 9850 3000
-NoConn ~ 9850 3100
 NoConn ~ 9850 3200
 NoConn ~ 9850 3300
 $Comp
@@ -1466,9 +1433,6 @@ Wire Wire Line
 Wire Wire Line
 	10100 1800 10100 1900
 Connection ~ 10100 1800
-Connection ~ 9000 600 
-Wire Wire Line
-	9000 600  9150 600 
 $Comp
 L power:GND #PWR0115
 U 1 1 6229CD44
@@ -1521,7 +1485,6 @@ Connection ~ 7900 550
 Wire Wire Line
 	7900 550  8050 550 
 Connection ~ 8050 550 
-Connection ~ 8700 600 
 $Comp
 L power:GND #PWR013
 U 1 1 622A3F9E
@@ -1739,4 +1702,40 @@ Text Label 6050 7300 2    50   ~ 0
 SI2C_SCL
 Wire Wire Line
 	5450 2500 6600 2500
+Wire Wire Line
+	9250 600  10050 600 
+Connection ~ 9250 600 
+Wire Wire Line
+	9150 600  9250 600 
+Connection ~ 9150 600 
+Wire Wire Line
+	9000 600  9150 600 
+Connection ~ 9000 600 
+Wire Wire Line
+	8700 600  8800 600 
+Connection ~ 8800 600 
+Wire Wire Line
+	8900 600  9000 600 
+Wire Wire Line
+	8800 600  8900 600 
+Connection ~ 8900 600 
+Connection ~ 8700 600 
+$Comp
+L tilda6:ESP32-S3FN8 U1
+U 1 1 6208023D
+P 8950 2700
+F 0 "U1" H 8300 4750 50  0000 C CNN
+F 1 "ESP32-S3FN8" H 9600 4750 50  0000 C CNN
+F 2 "tilda6:QFN-56-1EP_7x7mm_P0.4mm_EP4.1x4.1mm" H 9000 4050 50  0001 C CNN
+F 3 "" H 9000 4050 50  0001 C CNN
+	1    8950 2700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8100 3350
+NoConn ~ 8100 3450
+NoConn ~ 8100 3550
+NoConn ~ 8100 3650
+NoConn ~ 8100 3750
+NoConn ~ 8100 3850
+NoConn ~ 9850 2800
 $EndSCHEMATC
