@@ -19,7 +19,7 @@ U 1 1 60FBBBAF
 P 1050 2100
 F 0 "P1" H 1157 3367 50  0000 C CNN
 F 1 "USB_C_Plug" H 1157 3276 50  0000 C CNN
-F 2 "corelib:UTC009-C-vias" H 1200 2100 50  0001 C CNN
+F 2 "corelib:UTC009-C-vias-optimized" H 1200 2100 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1200 2100 50  0001 C CNN
 	1    1050 2100
 	1    0    0    -1  
@@ -104,7 +104,7 @@ F 1 "SW_SPST" H 1850 6644 50  0000 C CNN
 F 2 "tilda6:sidebutton-1TS003B-1400-3500A-CT" H 1850 6500 50  0001 C CNN
 F 3 "~" H 1850 6500 50  0001 C CNN
 	1    1850 6500
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Switch:SW_SPST SW3
