@@ -153,7 +153,7 @@ U 1 1 61F6D159
 P 4850 3300
 F 0 "J4" H 4930 3342 50  0000 L CNN
 F 1 "Conn_01x13" H 4930 3251 50  0000 L CNN
-F 2 "corelib:ER-TFT-1.14-reverse" H 4850 3300 50  0001 C CNN
+F 2 "corelib:ER-TFT-1.14" H 4850 3300 50  0001 C CNN
 F 3 "~" H 4850 3300 50  0001 C CNN
 	1    4850 3300
 	1    0    0    -1  
@@ -476,5 +476,20 @@ NoConn ~ 2400 2950
 NoConn ~ 2900 2850
 NoConn ~ 2900 2950
 Text Label 4650 3900 2    50   ~ 0
+GND
+$Comp
+L Connector:Conn_01x02_Female J7
+U 1 1 624964CC
+P 1200 3500
+F 0 "J7" H 1092 3175 50  0000 C CNN
+F 1 "Conn_01x02_Female" H 1092 3266 50  0000 C CNN
+F 2 "Connector_JST:JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal" H 1200 3500 50  0001 C CNN
+F 3 "~" H 1200 3500 50  0001 C CNN
+	1    1200 3500
+	-1   0    0    1   
+$EndComp
+Text Label 1400 3400 0    50   ~ 0
+BATTERY+
+Text Label 1400 3500 0    50   ~ 0
 GND
 $EndSCHEMATC
