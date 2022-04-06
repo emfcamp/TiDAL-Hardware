@@ -340,7 +340,7 @@ $EndComp
 Text Label 1650 6500 2    50   ~ 0
 BTN1
 Text Label 5550 5400 0    50   ~ 0
-BTN2
+BTN2_IN
 $Comp
 L power:GND #PWR0108
 U 1 1 62065237
@@ -1771,4 +1771,76 @@ F 3 "~" H 5400 5200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5550 5200 5550 5050
+$Comp
+L Amplifier_Operational:LMV321 U11
+U 1 1 624DE2E4
+P 5350 3150
+F 0 "U11" H 5694 3196 50  0000 L CNN
+F 1 "LMV321" H 5694 3105 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5350 3150 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lmv324.pdf" H 5350 3150 50  0001 C CNN
+	1    5350 3150
+	1    0    0    -1  
+$EndComp
+Text Label 5250 2850 0    50   ~ 0
+3V3
+$Comp
+L power:GND #PWR0116
+U 1 1 624E0DD8
+P 4800 3450
+F 0 "#PWR0116" H 4800 3200 50  0001 C CNN
+F 1 "GND" H 4805 3277 50  0000 C CNN
+F 2 "" H 4800 3450 50  0001 C CNN
+F 3 "" H 4800 3450 50  0001 C CNN
+	1    4800 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R19
+U 1 1 62507883
+P 5500 3500
+F 0 "R19" V 5600 3550 50  0000 R CNN
+F 1 "1k" V 5500 3550 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5430 3500 50  0001 C CNN
+F 3 "~" H 5500 3500 50  0001 C CNN
+	1    5500 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5350 3500 5350 3550
+Wire Wire Line
+	5350 3550 5050 3550
+Wire Wire Line
+	5050 3550 5050 3350
+Wire Wire Line
+	5650 3500 5650 3150
+Text Label 5050 3050 2    50   ~ 0
+BTN2_IN
+Text Label 5650 3350 0    50   ~ 0
+BTN2
+$Comp
+L Device:R R20
+U 1 1 625505D8
+P 4900 3350
+F 0 "R20" V 5000 3400 50  0000 R CNN
+F 1 "1k" V 4900 3400 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4830 3350 50  0001 C CNN
+F 3 "~" H 4900 3350 50  0001 C CNN
+	1    4900 3350
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5050 3350
+Wire Wire Line
+	5050 3350 5050 3250
+Wire Wire Line
+	4750 3350 4750 3450
+Wire Wire Line
+	4750 3450 4800 3450
+Wire Wire Line
+	4800 3450 5250 3450
+Connection ~ 4800 3450
+Wire Notes Line
+	4700 2700 6200 2700
+Wire Notes Line
+	6200 2700 6200 3650
 $EndSCHEMATC
