@@ -27,12 +27,12 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_02x02_Odd_Even J2
 U 1 1 61F5DC37
-P 2600 2850
-F 0 "J2" H 2650 3067 50  0000 C CNN
-F 1 "Conn_02x02_Odd_Even" H 2650 2976 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x02_P1.27mm_Vertical_SMD" H 2600 2850 50  0001 C CNN
-F 3 "~" H 2600 2850 50  0001 C CNN
-	1    2600 2850
+P 1200 4150
+F 0 "J2" H 1250 4367 50  0000 C CNN
+F 1 "Conn_02x02_Odd_Even" H 1250 4276 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x02_P1.27mm_Vertical_SMD" H 1200 4150 50  0001 C CNN
+F 3 "~" H 1200 4150 50  0001 C CNN
+	1    1200 4150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -352,7 +352,7 @@ U 1 1 61FC42B5
 P 1750 2250
 F 0 "SW2" H 1750 2535 50  0000 C CNN
 F 1 "SW_Push" H 1750 2444 50  0000 C CNN
-F 2 "tilda6:TS3735PA_250gf" H 1750 2450 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2" H 1750 2450 50  0001 C CNN
 F 3 "~" H 1750 2450 50  0001 C CNN
 	1    1750 2250
 	1    0    0    -1  
@@ -363,7 +363,7 @@ U 1 1 61FC61CC
 P 1750 2650
 F 0 "SW3" H 1750 2935 50  0000 C CNN
 F 1 "SW_Push" H 1750 2844 50  0000 C CNN
-F 2 "tilda6:TS3735PA_250gf" H 1750 2850 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2" H 1750 2850 50  0001 C CNN
 F 3 "~" H 1750 2850 50  0001 C CNN
 	1    1750 2650
 	1    0    0    -1  
@@ -488,8 +488,68 @@ F 3 "~" H 1200 3500 50  0001 C CNN
 	1    1200 3500
 	-1   0    0    1   
 $EndComp
-Text Label 1400 3400 0    50   ~ 0
-BATTERY+
 Text Label 1400 3500 0    50   ~ 0
+BATTERY+
+Text Label 1400 3400 0    50   ~ 0
+GND
+Text Label 1000 4150 2    50   ~ 0
+D-
+Text Label 1000 4250 2    50   ~ 0
+D+
+Text Label 1500 4150 0    50   ~ 0
+GND
+Text Label 1500 4250 0    50   ~ 0
+VBUS
+$Comp
+L Connector:TestPoint TP3
+U 1 1 62514A48
+P 1150 4850
+F 0 "TP3" V 1104 5038 50  0000 L CNN
+F 1 "TestPoint" V 1195 5038 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 1350 4850 50  0001 C CNN
+F 3 "~" H 1350 4850 50  0001 C CNN
+	1    1150 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 62515446
+P 1150 4500
+F 0 "TP4" V 1104 4688 50  0000 L CNN
+F 1 "TestPoint" V 1195 4688 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 1350 4500 50  0001 C CNN
+F 3 "~" H 1350 4500 50  0001 C CNN
+	1    1150 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 62515682
+P 1150 4650
+F 0 "TP5" V 1104 4838 50  0000 L CNN
+F 1 "TestPoint" V 1195 4838 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 1350 4650 50  0001 C CNN
+F 3 "~" H 1350 4650 50  0001 C CNN
+	1    1150 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 625159BC
+P 1150 5000
+F 0 "TP6" V 1104 5188 50  0000 L CNN
+F 1 "TestPoint" V 1195 5188 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 1350 5000 50  0001 C CNN
+F 3 "~" H 1350 5000 50  0001 C CNN
+	1    1150 5000
+	0    1    1    0   
+$EndComp
+Text Label 1150 4500 2    50   ~ 0
+VBUS
+Text Label 1150 4650 2    50   ~ 0
+D-
+Text Label 1150 4850 2    50   ~ 0
+D+
+Text Label 1150 5000 2    50   ~ 0
 GND
 $EndSCHEMATC
