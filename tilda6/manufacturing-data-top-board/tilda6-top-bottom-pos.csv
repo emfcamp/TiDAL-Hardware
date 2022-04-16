@@ -1,0 +1,5 @@
+Ref,Val,Package,PosX,PosY,Rot,Side
+"J1","Conn_02x14_Odd_Even","PinHeader_2x14_P1.27mm_Vertical_SMD",156.550000,-110.100000,180.000000,bottom
+"J2","Conn_02x02_Odd_Even","PinHeader_2x02_P1.27mm_Vertical_SMD",103.250000,-117.500000,180.000000,bottom
+"J3","Conn_02x02_Odd_Even","PinHeader_2x02_P1.27mm_Vertical_SMD",107.062000,-102.000000,0.000000,bottom
+"J7","Conn_01x02_Female","JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal",104.060660,-108.267767,225.000000,bottom
