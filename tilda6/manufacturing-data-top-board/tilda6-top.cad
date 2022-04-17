@@ -991,7 +991,7 @@ PLACE 4.21504 -4.01575
 LAYER BOTTOM
 ROTATION 0
 SHAPE "Connector_PinHeader_1.27mm:PinHeader_2x02_P1.27mm_Vertical_SMD_0" MIRRORX FLIP
-TEXT -0.00637795 0.0728346 0.0275591 -180 MIRRORX SILKSCREEN_BOTTOM "J3" 0 0 0.0551181 0.0275591
+TEXT -0.0034252 0.0787402 0.0275591 -180 MIRRORX SILKSCREEN_BOTTOM "J3" 0 0 0.0551181 0.0275591
 TEXT 0 -0.0917323 0.0393701 -180 MIRRORX SILKSCREEN_BOTTOM "Conn_02x02_Odd_Even" 0 0 0.748031 0.0393701
 SHEET "RefDes: J3, Value: Conn_02x02_Odd_Even"
 
@@ -1058,109 +1058,19 @@ $ENDCOMPONENTS
 
 $DEVICES
 
-DEVICE "DEV_tilda6:art-tf-f1"
-PART "LOGO"
-PACKAGE "tilda6:art-tr-f7"
-TYPE TH
-
-DEVICE "DEV_TestPoint:TestPoint_Pad_1.5x1.5mm_1"
-PART "TestPoint"
-PACKAGE "TestPoint:TestPoint_Pad_1.5x1.5mm"
-TYPE VIRTUAL
-
-DEVICE "DEV_tilda6:XUNPU_FPC-05F-8PH20"
-PART "Conn_01x08"
-PACKAGE "tilda6:XUNPU_FPC-05F-8PH20"
-TYPE SMD
-
-DEVICE "DEV_tilda6:top-reverse-mask"
-PART "LOGO"
-PACKAGE "tilda6:top-reverse-mask"
-TYPE TH
-
-DEVICE "DEV_Package_TO_SOT_SMD:SOT-883"
-PART "LP0404N3T5G"
-PACKAGE "Package_TO_SOT_SMD:SOT-883"
-TYPE SMD
-
-DEVICE "DEV_TestPoint:TestPoint_Pad_1.5x1.5mm_0"
-PART "TestPoint"
-PACKAGE "TestPoint:TestPoint_Pad_1.5x1.5mm"
-TYPE VIRTUAL
-
-DEVICE "DEV_tilda6:art-tf-f6"
-PART "LOGO"
-PACKAGE "tilda6:art-tf-f6"
-TYPE TH
-
-DEVICE "DEV_Connector_PinHeader_1.27mm:PinHeader_2x02_P1.27mm_Vertical_SMD_0"
-PART "Conn_02x02_Odd_Even"
-PACKAGE "Connector_PinHeader_1.27mm:PinHeader_2x02_P1.27mm_Vertical_SMD"
-TYPE SMD
-
-DEVICE "DEV_Connector_PinHeader_1.27mm:PinHeader_2x02_P1.27mm_Vertical_SMD"
-PART "Conn_02x02_Odd_Even"
-PACKAGE "Connector_PinHeader_1.27mm:PinHeader_2x02_P1.27mm_Vertical_SMD"
-TYPE SMD
-
-DEVICE "DEV_Resistor_SMD:R_0402_1005Metric"
-PART "47R"
-PACKAGE "Resistor_SMD:R_0402_1005Metric"
-TYPE SMD
-
-DEVICE "DEV_Capacitor_SMD:C_0402_1005Metric"
-PART "10n"
-PACKAGE "Capacitor_SMD:C_0402_1005Metric"
-TYPE SMD
-
-DEVICE "DEV_tilda6:art-tr-f4"
-PART "LOGO"
-PACKAGE "tilda6:art-tr-f4"
-TYPE TH
-
-DEVICE "DEV_tilda6:JOYSTICK-5-WAY"
-PART "5-WAY-JOYSTICK"
-PACKAGE "tilda6:JOYSTICK-5-WAY"
-TYPE SMD
-
-DEVICE "DEV_tilda6:art-gold-fish"
-PART "LOGO"
-PACKAGE "tilda6:art-gold-fish"
-TYPE TH
-
-DEVICE "DEV_Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2_1"
-PART "SW_Push"
-PACKAGE "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2"
-TYPE SMD
-
-DEVICE "DEV_Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2"
-PART "SW_Push"
-PACKAGE "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2"
-TYPE SMD
-
 DEVICE "DEV_tilda6:top-front-mask"
 PART "LOGO"
 PACKAGE "tilda6:top-front-mask"
 TYPE TH
 
-DEVICE "DEV_tilda6:art-minus-horse"
-PART "TestPoint"
-PACKAGE "tilda6:art-minus-horse"
+DEVICE "DEV_tilda6:art-tf-f1"
+PART "LOGO"
+PACKAGE "tilda6:art-tr-f2"
 TYPE TH
 
-DEVICE "DEV_Capacitor_SMD:C_0402_1005Metric_0"
-PART "1u"
-PACKAGE "Capacitor_SMD:C_0402_1005Metric"
-TYPE SMD
-
-DEVICE "DEV_corelib:ER-TFT-1.14"
-PART "Conn_01x13"
-PACKAGE "corelib:ER-TFT-1.14"
-TYPE TH
-
-DEVICE "DEV_Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2_0"
-PART "SW_Push"
-PACKAGE "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2"
+DEVICE "DEV_Connector_PinHeader_1.27mm:PinHeader_2x14_P1.27mm_Vertical_SMD"
+PART "Conn_02x14_Odd_Even"
+PACKAGE "Connector_PinHeader_1.27mm:PinHeader_2x14_P1.27mm_Vertical_SMD"
 TYPE SMD
 
 DEVICE "DEV_Connector_JST:JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal"
@@ -1168,7 +1078,32 @@ PART "Conn_01x02_Female"
 PACKAGE "Connector_JST:JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal"
 TYPE SMD
 
+DEVICE "DEV_Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2_1"
+PART "SW_Push"
+PACKAGE "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2"
+TYPE SMD
+
+DEVICE "DEV_Connector_PinHeader_1.27mm:PinHeader_2x02_P1.27mm_Vertical_SMD"
+PART "Conn_02x02_Odd_Even"
+PACKAGE "Connector_PinHeader_1.27mm:PinHeader_2x02_P1.27mm_Vertical_SMD"
+TYPE SMD
+
+DEVICE "DEV_Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2"
+PART "SW_Push"
+PACKAGE "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2"
+TYPE SMD
+
+DEVICE "DEV_Resistor_SMD:R_0402_1005Metric"
+PART "10k"
+PACKAGE "Resistor_SMD:R_0402_1005Metric"
+TYPE SMD
+
 DEVICE "DEV_TestPoint:TestPoint_Pad_1.5x1.5mm"
+PART "TestPoint"
+PACKAGE "TestPoint:TestPoint_Pad_1.5x1.5mm"
+TYPE VIRTUAL
+
+DEVICE "DEV_TestPoint:TestPoint_Pad_1.5x1.5mm_1"
 PART "TestPoint"
 PACKAGE "TestPoint:TestPoint_Pad_1.5x1.5mm"
 TYPE VIRTUAL
@@ -1178,9 +1113,69 @@ PART "Conn_01x08"
 PACKAGE "tilda6:XUNPU_FPC-05F-8PH20"
 TYPE SMD
 
+DEVICE "DEV_Capacitor_SMD:C_0402_1005Metric"
+PART "10n"
+PACKAGE "Capacitor_SMD:C_0402_1005Metric"
+TYPE SMD
+
+DEVICE "DEV_Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2_0"
+PART "SW_Push"
+PACKAGE "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2"
+TYPE SMD
+
+DEVICE "DEV_Connector_PinHeader_1.27mm:PinHeader_2x02_P1.27mm_Vertical_SMD_0"
+PART "Conn_02x02_Odd_Even"
+PACKAGE "Connector_PinHeader_1.27mm:PinHeader_2x02_P1.27mm_Vertical_SMD"
+TYPE SMD
+
+DEVICE "DEV_tilda6:art-tf-f6"
+PART "LOGO"
+PACKAGE "tilda6:art-tr-f6"
+TYPE TH
+
+DEVICE "DEV_Package_TO_SOT_SMD:SOT-883"
+PART "LP0404N3T5G"
+PACKAGE "Package_TO_SOT_SMD:SOT-883"
+TYPE SMD
+
+DEVICE "DEV_tilda6:JOYSTICK-5-WAY"
+PART "5-WAY-JOYSTICK"
+PACKAGE "tilda6:JOYSTICK-5-WAY"
+TYPE SMD
+
+DEVICE "DEV_Capacitor_SMD:C_0402_1005Metric_0"
+PART "1u"
+PACKAGE "Capacitor_SMD:C_0402_1005Metric"
+TYPE SMD
+
+DEVICE "DEV_tilda6:XUNPU_FPC-05F-8PH20"
+PART "Conn_01x08"
+PACKAGE "tilda6:XUNPU_FPC-05F-8PH20"
+TYPE SMD
+
+DEVICE "DEV_TestPoint:TestPoint_Pad_1.5x1.5mm_0"
+PART "TestPoint"
+PACKAGE "TestPoint:TestPoint_Pad_1.5x1.5mm"
+TYPE VIRTUAL
+
+DEVICE "DEV_tilda6:art-gold-fish"
+PART "LOGO"
+PACKAGE "tilda6:art-gold-fish"
+TYPE TH
+
 DEVICE "DEV_tilda6:top-front-silk"
 PART "LOGO"
 PACKAGE "tilda6:top-front-silk"
+TYPE TH
+
+DEVICE "DEV_tilda6:top-reverse-mask"
+PART "LOGO"
+PACKAGE "tilda6:top-reverse-mask"
+TYPE TH
+
+DEVICE "DEV_corelib:ER-TFT-1.14"
+PART "Conn_01x13"
+PACKAGE "corelib:ER-TFT-1.14"
 TYPE TH
 
 DEVICE "DEV_tilda6:art-plus-star"
@@ -1188,10 +1183,15 @@ PART "TestPoint"
 PACKAGE "tilda6:art-plus-star"
 TYPE TH
 
-DEVICE "DEV_Connector_PinHeader_1.27mm:PinHeader_2x14_P1.27mm_Vertical_SMD"
-PART "Conn_02x14_Odd_Even"
-PACKAGE "Connector_PinHeader_1.27mm:PinHeader_2x14_P1.27mm_Vertical_SMD"
-TYPE SMD
+DEVICE "DEV_tilda6:art-minus-horse"
+PART "TestPoint"
+PACKAGE "tilda6:art-minus-horse"
+TYPE TH
+
+DEVICE "DEV_tilda6:art-tr-f4"
+PART "LOGO"
+PACKAGE "tilda6:art-tr-f4"
+TYPE TH
 
 DEVICE "DEV_tilda6:top-reverse-silk"
 PART "LOGO"
